@@ -1,6 +1,6 @@
 #Задача 1
 def task_1 (a: int, b: float, c: str, d: list, e: bool) -> int:
-    return
+    return (task_1())
 a = 2
 b = 3.14
 c = 'Hi'
@@ -13,6 +13,7 @@ print(type(d))
 print(type(e))
 
 
+
 #Задача 2
 def task_2 (l = (1, 2, 3, 5, 8, 13, 21)) -> int:
     return l[0:3]
@@ -21,6 +22,6 @@ print(task_2())
 
 
 #Задача 3
-def task_3 ():
-
-    return
+def task_3 (number: int) -> int:
+    return number**2
+print(task_3(5))
