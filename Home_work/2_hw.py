@@ -21,4 +21,6 @@ print(task_2())
 
 
 #Задача 3
-def task_3
+def task_3 ():
+
+    return
