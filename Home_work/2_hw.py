@@ -16,8 +16,8 @@ task_1()
 
 #Задача 2
 def task_2 () -> None:
-    int_tuple: tuple = (1, 2, 3, 5, 8, 13, 21)
-    print(int_tuple[0:3])
+    test_list: list = [1, 2, 3, 5, 8, 13, 21]
+    print(test_list[0:3])
 
 task_2()
 
