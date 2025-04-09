@@ -11,6 +11,15 @@ from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get('https://www.saucedemo.com/')
 
+def test_search():
+    password = driver.find_element(By.ID, "password")
+    user_name = driver.find_element(By.ID, "user-name")
+    button = driver.find_element(By.ID, "login-button")
+    if button and user_name and password is None:
+        print('Элемент не найден')
+    else:
+        print('Элемент найден')
+
 
 # поиск элемента
 # def test_search_user_name():
@@ -35,11 +44,3 @@ driver.get('https://www.saucedemo.com/')
 #         print('Элемент найден')
 
 
-def test_search():
-    password = driver.find_element(By.ID, "password")
-    user_name = driver.find_element(By.ID, "user-name")
-    button = driver.find_element(By.ID, "login-button")
-    if button and user_name and password is None:
-        print('Элемент не найден')
-    else:
-        print('Элемент найден')
