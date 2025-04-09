@@ -15,6 +15,7 @@ def test_search():
     password = driver.find_element(By.ID, "password")
     user_name = driver.find_element(By.ID, "user-name")
     button = driver.find_element(By.ID, "login-button")
+
     if button and user_name and password is None:
         print('Элемент не найден')
     else:
